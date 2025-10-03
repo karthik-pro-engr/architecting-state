@@ -1,0 +1,16 @@
+# CODEOWNERS for architecting-state
+# Format: <pattern> <owner>...
+
+# Core app Kotlin code (default senior dev)
+app/src/main/java/**      @karthik-pro-engr
+
+# UI / Compose-specific areas (you can add team if available)
+app/src/main/java/**/ui/**  @karthik-pro-engr
+
+# Gradle build files and CI workflows: platform team or you
+build.gradle.kts           @karthik-pro-engr
+gradle/**                  @karthik-pro-engr
+.github/workflows/**       @karthik-pro-engr
+
+# Documentation and markdown files
+*.md                      @karthik-pro-engr

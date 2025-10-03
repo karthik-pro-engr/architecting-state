@@ -10,6 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import com.karthik.pro.engr.architecting_state.ui.screens.BalancedEnergyScreen
 import com.karthik.pro.engr.architecting_state.ui.theme.ArchitectingstateTheme
 import com.karthik.pro.engr.devtools.AllVariantsPreview
 
@@ -20,8 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ArchitectingstateTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    BalancedEnergyScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
