@@ -13,7 +13,7 @@ import androidx.compose.ui.Modifier
 import com.karthik.pro.engr.architecting_state.ui.screens.BalancedEnergyScreen
 import com.karthik.pro.engr.architecting_state.ui.theme.ArchitectingstateTheme
 import com.karthik.pro.engr.devtools.AllVariantsPreview
-
+// Test for direct push validation
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
