@@ -13,7 +13,7 @@ import androidx.compose.ui.Modifier
 import com.karthik.pro.engr.architecting_state.ui.screens.BalancedEnergyScreen
 import com.karthik.pro.engr.architecting_state.ui.theme.ArchitectingstateTheme
 import com.karthik.pro.engr.devtools.AllVariantsPreview
-
+// This is the comment is added for reviewers to review
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
