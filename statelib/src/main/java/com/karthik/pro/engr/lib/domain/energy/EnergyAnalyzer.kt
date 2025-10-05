@@ -1,4 +1,4 @@
-package com.karthik.pro.engr.architecting_state.domain.energy
+package com.karthik.pro.engr.lib.domain.energy
 
 object EnergyAnalyzer {
     fun findLongestStretch(houseTypes: List<String>): StretchResult {
@@ -34,7 +34,6 @@ object EnergyAnalyzer {
                 } result-> ${result.joinToString(", ")}")
         }
 
-//        "The Longest Stretch Houses Starts from ${result[0] + 1} to ${result[1] + 1}"
         return StretchResult(result[0] + 1, result[1], maxLen)
     }
 }
