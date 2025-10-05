@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "architecting-state"
 include(":app")
- 
+include(":statelib")
