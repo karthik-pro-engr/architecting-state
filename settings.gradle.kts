@@ -23,3 +23,4 @@ rootProject.name = "architecting-state"
 include(":app")
 include(":callback")
 include(":statelib")
+include(":viewmodel-ssh")
