@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.karthik.pro.engr.architectingstate"
+    namespace = "com.karthik.pro.engr.callback"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.karthik.pro.engr.architecting_state"
+        applicationId = "com.karthik.pro.engr.callback"
         minSdk = 28
         targetSdk = 36
         versionCode = 1
@@ -49,9 +49,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
-    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.all.variants.preview)
+    implementation(project(":statelib"))
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

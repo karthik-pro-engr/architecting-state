@@ -1,4 +1,4 @@
-package com.karthik.pro.engr.res
+package com.karthik.pro.engr.architectingstate
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.karthik.pro.engr.res.test", appContext.packageName)
+        assertEquals("com.karthik.pro.engr.architecting_state", appContext.packageName)
     }
 }
