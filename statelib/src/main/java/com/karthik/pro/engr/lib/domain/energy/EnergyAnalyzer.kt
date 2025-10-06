@@ -1,5 +1,7 @@
 package com.karthik.pro.engr.lib.domain.energy
 
+import androidx.versionedparcelable.VersionedParcelize
+
 object EnergyAnalyzer {
     fun findLongestStretch(houseTypes: List<String>): StretchResult {
         val result = IntArray(2)
@@ -37,5 +39,5 @@ object EnergyAnalyzer {
         return StretchResult(result[0] + 1, result[1], maxLen)
     }
 }
-
+@VersionedParcelize
 data class StretchResult(val startIndex: Int, val endIndex: Int, val length: Int)
