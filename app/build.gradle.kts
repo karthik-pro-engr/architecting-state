@@ -39,7 +39,3 @@ android {
         compose = true
     }
 }
-
-dependencies {
-    implementation(libs.all.variants.preview)
-}
