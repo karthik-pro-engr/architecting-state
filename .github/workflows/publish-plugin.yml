@@ -1,0 +1,23 @@
+# .github/workflows/publish-snapshot.yml
+name: Publish Convention Snapshot
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Publish build-logic to GitHub Packages
+        env:
+          GPR_USER: ${{ github.actor }}
+          GPR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./gradlew :build-logic:publish -Pgpr.user=$GPR_USER -Pgpr.key=$GPR_TOKEN --no-daemon
