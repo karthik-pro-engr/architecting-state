@@ -41,6 +41,5 @@ android {
 }
 
 dependencies {
-    implementation(libs.all.variants.preview)
     implementation(project(":statelib"))
 }
