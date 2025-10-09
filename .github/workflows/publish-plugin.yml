@@ -42,7 +42,7 @@ jobs:
         run: |
           echo "PR validation mode — running publishToMavenLocal (no secrets required)"
           chmod +x ./gradlew
-          ./gradlew :build-logic:publishToMavenLocal --no-daemon
+          ./gradlew :build-logic:convention:publishToMavenLocal --no-daemon
 
       - name: Real publish (push to main)
         if: steps.set_mode.outputs.mode == 'publish'
