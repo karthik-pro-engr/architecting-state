@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="placeholder_input">Producer or Consumer</string>
+    <string name="placeholder_input">P or C</string>
     <string name="label_house_type">Enter House Type</string>
     <string name="button_add_house_type">Add House type</string>
     <string name="text_no_house_types_added">No House Types Added</string>

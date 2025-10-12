@@ -23,10 +23,10 @@ class BalancedEnergyViewModelStateFlow() : ViewModel() {
                         val error = when {
                             trimmed.isEmpty() -> "Input cannot be empty"
                             trimmed.lowercase() !in listOf(
-                                "producer",
-                                "consumer"
+                                "p",
+                                "c"
                             ) ->
-                                "Input must be either 'producer' or 'consumer'"
+                                "Input must be either 'p' or 'c'"
 
                             else -> {
                                 ""

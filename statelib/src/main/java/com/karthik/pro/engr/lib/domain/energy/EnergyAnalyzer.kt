@@ -12,9 +12,9 @@ object EnergyAnalyzer {
         var maxLen = 0
         houseTypes.forEachIndexed { index, element ->
             prefixSum += when (element.lowercase()) {
-                "producer" -> 1
+                "p" -> 1
 
-                "consumer" -> -1
+                "c" -> -1
 
                 else -> 0
             }
